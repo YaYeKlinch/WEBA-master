@@ -1,0 +1,16 @@
+body {
+
+    padding: 100px 0;
+    background: #c9dbe9;
+    background: linear-gradient(to bottom, #c9dbe9 0%, #fff 100%);
+}
+
+body .row {
+    height: 100vh;
+    background: #f7f7ff;
+}
+
+tbody > .selected {
+    background-color: #c9dbe9;
+}
+

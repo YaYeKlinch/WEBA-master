@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebDbms</title>
+    <link rel="stylesheet" href="newstyle.css">
+
+</head>
+
+<div class="row cloud-container">
+
+    <section class="col-sm-4 databases">
+        <table class="databaseList table">
+            <tbody>
+            <tr>
+                <th>Databases</th>
+            </tr>
+            </tbody>
+        </table>
+        <a id="btnCreateDatabase" class="button button-create btn btn-info" href="#">Create database</a>
+        <a id="btnDeleteDatabase" class="button button-delete btn btn-danger" href="#">Delete database</a>
+        <section class="createDatabaseFormSection">
+            <form class="createForm createDatabaseForm">
+                <p><b>Enter database name:</b></p>
+                <input type="text" class="databaseName form-control" title="database name"><br>
+                <input type="button" class="submitButton btn btn-success" value="Submit">
+                <input type="button" class="cancelButton btn btn-danger" value="Cancel">
+            </form>
+        </section>
+    </section>
+    <section class="col-sm-4 tables">
+        <table class="tableList table">
+            <tbody>
+            <tr>
+                <th>Tables</th>
+            </tr>
+            </tbody>
+        </table>
+        <a id="btnCreateTable" class="button button-create btn btn-info" href="#">Create table</a>
+
+        <section class="createTableFormSection">
+            <form role="form" class="createForm createTableForm">
+                <br>
+                <b>Table name:</b>
+                <input type="text" class="tableName form-control" title="table name">
+                <br>
+                <b>Columns:</b>
+                <button type="button" class="addColumn btn btn-default btn-sm">Add column</button><br>
+                <br>
+
+
+                <input type="button" class="submitButton btn btn-success" value="Submit">
+                <input type="button" class="cancelButton btn btn-danger" value="Cancel">
+            </form>
+        </section>
+    </section>
+    <section class="col-sm-4 entries">
+        <table class="entriesList table">
+            <tbody>
+            <tr>
+                <th>Rows</th>
+            </tr>
+            </tbody>
+        </table>
+        <a id="btnCreateRow" class="button button-create btn btn-info" href="#">Create row</a>
+        <a id="btnDeleteTable" class="button button-delete btn btn-danger" href="#">Delete same rows</a>
+
+        <section class="createRowFormSection">
+            <form role="form" class="form-group">
+                <p class="fields"></p>
+
+                <input type="button" class="submitButton btn btn-success" value="Submit">
+                <input type="button" class="cancelButton btn btn-danger" value="Cancel">
+            </form>
+        </section>
+
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="onloadEvents.js"></script>
+</body>
+</html>
